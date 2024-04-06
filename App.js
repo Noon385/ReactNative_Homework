@@ -23,7 +23,7 @@ const App = () => {
       {
         <View>
            <Image source={require('./pokemongo.jpg')} style={styles.image}></Image>
-          <Text >REGISTER</Text>
+          <Text style={styles.title}>REGISTER</Text>
           <TextInput
             style={styles.input}
             value={username}
@@ -87,6 +87,13 @@ const styles = StyleSheet.create({
     width: 200,
     height: 200,
     resizeMode: 'contain', // Optional: adjusts the image position to maintain aspect ratio
+  }, title: {
+    
+    marginBottom: 20,
+    position: 'absolute',
+    right: 0,
+    top: '50%',
+    transform: [{ translateY: -12 }], // Adjust this value to center the text vertically
   },
   
 });
